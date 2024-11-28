@@ -1,0 +1,178 @@
+/* Estilo geral do body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo do header */
+header {
+    display: flex; /* Exibe os itens lado a lado */
+    justify-content: space-between; /* Espaça os itens nos cantos */
+    align-items: center; /* Alinha verticalmente */
+    background: hsl(349, 79%, 83%); /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center;
+}
+img {
+    width: 270px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 100px; /* Arredonda os cantos */
+    position: absolute;
+    top: 20; /* Ou use bottom: 0 para colocar no canto inferior */
+    left: 30; /* Ou use right: 0 para colocar no canto direito */
+    margin: 100px; /* Espaço em relação ao canto */
+}
+.container {
+    position: relative; /* Garante que respeite a ordem do z-index */
+    display: inline-block; /* Remove espaços adicionais */
+    width: 100%; /* Largura do container */
+    height: 0; /* Altura do container */    
+}
+    
+    /* Estilo para a imagem */
+    .imagem {
+        display: block; /* Remove espaços adicionais */
+        width: 100%; /* Faz a imagem preencher a largura do container */
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+        object-fit: cover; /* Mantém a proporção da imagem */
+        z-index: 1; /* Define a imagem atrás do texto */
+        position: relative; /* Garante que respeita a ordem do z-index */
+    }
+    
+    /* Estilo para o texto */
+    .texto {
+        position: absolute; /* Posiciona o texto sobre a imagem */
+        top: 46%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta o texto ao centro */
+        z-index: 10; /* Garante que o texto está na frente */
+        color: rgb(25, 10, 16); /* Cor do texto */
+        font-size: 18px; /* Tamanho do texto */
+        font-weight: lighter; /* Deixa o texto em negrito */
+        text-shadow: 10px 10px 10px rgba(225, 225, 225, 0.7); /* Adiciona sombra para legibilidade */
+        padding: 50px 50px; /* Adiciona espaçamento interno */
+        border-radius: 5px; /* Arredonda as bordas */
+    }
+    
+/* Estilo do nav */
+.nav-links {
+    list-style: none; /* Remove os marcadores */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os links em linha */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+/* Estilo dos links */
+.nav-links a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Arredonda os cantos */
+    transition: background-color 0.3s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.nav-links a:hover {
+    background-color: #ad3d59; /* Cor de fundo no hover */
+}
+
+/* Estilo do main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do título principal no main */
+main h1 {
+    font-size: 24px;
+    color: #ff3064; /* Mesma cor usada nos links */
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px auto; /* Margem para separar a imagem */
+    display: block; /* Centraliza a imagem */
+}
+
+/* Estilo das seções */
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: #e49db8; /* Cor de fundo */
+    box-shadow: 0 2px 4px #bd264c; /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #ffffff; /* Cor do texto */
+    text-align: left; /* Alinhamento do texto */
+}
+
+/* Estilo dos subtítulos */
+section h3 {
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo das listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Ajustes adicionais */
+a {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+html, body {
+    height: 100%; /* Garante a altura total da página */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+/* Estilo do conteúdo */
+.main-content {
+    padding: 20px;
+    /* Seu conteúdo vai aqui */
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 50px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: hsl(349, 79%, 83%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo do texto dentro do rodapé */
+footer p {
+    font-size: 1em;
+    margin: 0;
+
+}
